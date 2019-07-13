@@ -12,6 +12,7 @@
 <div>
     <button id="jsstyle"
             onclick="js_style(id)">Style</button>
+    <button id="moreStyle" onclick="more_Style(id)">morestyle</button>
 </div>
 <script>
     function js_style()
@@ -19,7 +20,10 @@
 //font styles added by JS:
         text.style.fontSize = "16pt";
         text.style.fontFamily = "Arial";
-        text.style.color = "blue";
+        text.style.color = "blue"
+    }
+    function more_Style() {
+        text.style.border = "1px solid black";
     }
 
 </script>
