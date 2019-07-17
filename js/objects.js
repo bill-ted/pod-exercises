@@ -1,12 +1,12 @@
 "use strict";
 
-function makeCar(make,model) {
+const makeCar = (make,model) => {
     return {
         make: make,
         model: model
     }
-}
-
+};
+console.log(makeCar('ford','model-T'));
 let salesReport = {
     title: 'Monthly Sales Report',
     Date: '3-17-2015',
@@ -83,3 +83,12 @@ let salesReport = {
 
 };
 
+const getEmployeeCount = () => salesReport.Employees.length;
+console.log(getEmployeeCount());
+
+const getTotalNumberOfSales = salesReport.Employees.reduce((totalSales, employee) => {
+    return totalSales + employee.sales
+}, 0);
+console.log(getTotalNumberOfSales);
+
+console.log(getTotalNumberOfSales/11);
