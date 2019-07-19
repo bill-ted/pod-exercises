@@ -142,3 +142,8 @@ function setFirstElement(arr, x) {
     arr[0] = x;
     return arr
 }
+
+function getLastElement(arr) {
+    var last = arr.length-1;
+    return arr[last]
+}
