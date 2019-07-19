@@ -119,3 +119,31 @@ function midrange(n1,n2,n3) {
     var max = Math.max(n1,n2,n3);
     return (min + max) /2
 }
+
+//round 2
+
+function area(num) {
+    var diam = num * num;
+    return diam * Math.PI
+}
+
+function toArray(strA,strB) {
+    var arr = [];
+    arr.push(strA);
+    arr.push(strB);
+    return arr
+}
+
+function getFirstElement(arr) {
+    return arr[0];
+}
+
+function setFirstElement(arr, x) {
+    arr[0] = x;
+    return arr
+}
+
+function getLastElement(arr) {
+    var last = arr.length-1;
+    return arr[last]
+}
