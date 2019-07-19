@@ -82,10 +82,10 @@ let salesReport = {
     ]
 
 };
-
+//
 const getEmployeeCount = () => salesReport.Employees.length;
 console.log(getEmployeeCount());
-
+//
 const getTotalNumberOfSales = salesReport.Employees.reduce((totalSales, employee) => {
     return totalSales + employee.sales
 }, 0);
